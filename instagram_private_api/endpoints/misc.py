@@ -69,9 +69,15 @@ class MiscEndpointsMixin(object):
 
     def news(self, **kwargs):
         """
+        Deprecated: Instagram has no longer a "news" feature.
+        
         Get news feed of accounts the logged in account is following.
         This returns the items in the 'Following' tab.
         """
+        warnings.warn(
+            'Instagram has no longer a "news" feature.',
+            ClientDeprecationWarning)
+        
         return self._call_api('news/', query=kwargs)
 
     def news_inbox(self):
