@@ -3,8 +3,8 @@
 ## 1.6.1 (dev)
 - App API:
     * Add exception ``ClientFeedbackRequiredError``
-    * Updated constants. Instagram seems to block requests from too old applications
-    * Deprecated ``news()`` since this feature is no longer available on app
+    * Update constants. Instagram seems to block requests from too old applications
+    * ``news()`` deprecated since this feature is no longer available on app
 - Changed some examples in documentation
 
 ## 1.6.0

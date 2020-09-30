@@ -39,7 +39,7 @@ Usage
 =====
 
 The private app API client emulates the official app and has a larger number of functions. 
-The web API client has a smaller set but can be used without logging in.
+The web API client has a smaller set but can often be used without logging in.
 
 Your choice will depend on your use case.
 
@@ -92,7 +92,9 @@ Web API
 Avoiding Re-login
 -----------------
 
-You are advised to persist/cache the auth cookie details to avoid logging in every time you make an api call. Excessive logins is a surefire way to get your account flagged for removal. It's also advisable to cache the client details such as user agent, etc together with the auth details.
+Please note that everytime you instantiate a client, a login is done. Too much logins in a row is considered spammy behavior and is a surefire way to get your account flagged for removal.
+
+Therefore, you are encouraged to persist/cache the auth cookie details to avoid logging in every time you make an API call. It's also advisable to cache the client details such as user agent, etc together with the auth details.
 
 The saved auth cookie can be reused for up to 90 days.
 
