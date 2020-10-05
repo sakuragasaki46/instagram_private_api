@@ -83,3 +83,7 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# stuff of mine
+ig_api_settings/
+storage/

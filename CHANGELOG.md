@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.6.1 (dev)
+## 1.6.1
 - App API:
     * Add exception ``ClientFeedbackRequiredError``
     * Update constants. Instagram seems to block requests from too old applications
